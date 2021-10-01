@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1884894C27076B370072C81E /* Omnes-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1884894B27076B370072C81E /* Omnes-bold.ttf */; };
 		1891F34C27074CD7009D38E3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34B27074CD7009D38E3 /* ProjectView.swift */; };
 		1891F35027075CEA009D38E3 /* SkillLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34F27075CEA009D38E3 /* SkillLink.swift */; };
 		1891F3522707621B009D38E3 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F3512707621B009D38E3 /* ProjectsView.swift */; };
@@ -22,7 +23,6 @@
 		18AA353027039A3D00B5FE9A /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA352F27039A3D00B5FE9A /* Portfolio.swift */; };
 		18AA353227039B8800B5FE9A /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA353127039B8800B5FE9A /* AppModel.swift */; };
 		18AA353527039EA500B5FE9A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA353427039EA500B5FE9A /* HeaderView.swift */; };
-		18AA353A2703C28C00B5FE9A /* Omnes-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AA35392703C28C00B5FE9A /* Omnes-bold.ttf */; };
 		18AA353C2703C34400B5FE9A /* Omnes-hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AA353B2703C34400B5FE9A /* Omnes-hairline.ttf */; };
 		18AA353E2703C34900B5FE9A /* Omnes-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AA353D2703C34900B5FE9A /* Omnes-light.ttf */; };
 		18AA35402703C35000B5FE9A /* Omnes-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18AA353F2703C35000B5FE9A /* Omnes-regular.ttf */; };
@@ -34,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1884894B27076B370072C81E /* Omnes-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-bold.ttf"; sourceTree = "<group>"; };
 		1891F34B27074CD7009D38E3 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		1891F34F27075CEA009D38E3 /* SkillLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillLink.swift; sourceTree = "<group>"; };
 		1891F3512707621B009D38E3 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		18AA353127039B8800B5FE9A /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		18AA353427039EA500B5FE9A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		18AA35362703C1D600B5FE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		18AA35392703C28C00B5FE9A /* Omnes-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Omnes-bold.ttf"; path = "../../../../../../../Downloads/Omnes-bold.ttf"; sourceTree = "<group>"; };
 		18AA353B2703C34400B5FE9A /* Omnes-hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-hairline.ttf"; sourceTree = "<group>"; };
 		18AA353D2703C34900B5FE9A /* Omnes-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-light.ttf"; sourceTree = "<group>"; };
 		18AA353F2703C35000B5FE9A /* Omnes-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-regular.ttf"; sourceTree = "<group>"; };
@@ -140,13 +140,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		1892CAD9270208C900AB7947 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		1892CADA27020B8600AB7947 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +152,6 @@
 		1892CADB27020B9400AB7947 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1892CAD9270208C900AB7947 /* Models */,
 				18AA353127039B8800B5FE9A /* AppModel.swift */,
 			);
 			path = Services;
@@ -168,8 +160,8 @@
 		1892CADC27020BD500AB7947 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				18AA35392703C28C00B5FE9A /* Omnes-bold.ttf */,
 				18AA353D2703C34900B5FE9A /* Omnes-light.ttf */,
+				1884894B27076B370072C81E /* Omnes-bold.ttf */,
 				18AA353B2703C34400B5FE9A /* Omnes-hairline.ttf */,
 				18AA35412703C35500B5FE9A /* Omnes-thin.ttf */,
 				18AA353F2703C35000B5FE9A /* Omnes-regular.ttf */,
@@ -277,10 +269,10 @@
 			files = (
 				1892CACA2702031400AB7947 /* Preview Assets.xcassets in Resources */,
 				18AA35402703C35000B5FE9A /* Omnes-regular.ttf in Resources */,
+				1884894C27076B370072C81E /* Omnes-bold.ttf in Resources */,
 				1892CAC72702031400AB7947 /* Assets.xcassets in Resources */,
 				18AA353E2703C34900B5FE9A /* Omnes-light.ttf in Resources */,
 				18AA35422703C35500B5FE9A /* Omnes-thin.ttf in Resources */,
-				18AA353A2703C28C00B5FE9A /* Omnes-bold.ttf in Resources */,
 				18AA35252703913300B5FE9A /* Omnes.ttf in Resources */,
 				18AA353C2703C34400B5FE9A /* Omnes-hairline.ttf in Resources */,
 			);
