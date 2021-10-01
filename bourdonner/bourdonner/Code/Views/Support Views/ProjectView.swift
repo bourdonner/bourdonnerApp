@@ -10,38 +10,37 @@ import SwiftUI
 struct ProjectView: View {
     
     var project: Projects
-    var width: CGFloat   = 250
+//    var width: CGFloat  = 250
            
         var body: some View {
             Button(action: {
-                print (project.link)
-                
+                UIApplication.shared.open(URL(string: project.link)!)
 //      onOpenURL(perform: url in
 //      print(project.link))
                 
             }, label: {
-                VStack{
-                    Image(systemName: project.projectImage)
-                        .font(.system(size: 60, weight: .semibold))
-                        .opacity(1)
                     
-                    Spacer()
-                    Text(project.projectName)
-                        .font(Omnes.regular.font(size: 12))
-                        .multilineTextAlignment(.center)
-                        .lineLimit(nil)
-                        .opacity(1)
+                    VStack{
+                        Image(systemName: project.projectImage)
+                            .font(.system(size: 60, weight: .semibold))
+                            .opacity(1)
+                        Spacer()
+                        
+                        Text(project.projectName)
+                            .font(Omnes.regular.font(size: 12))
+                            .multilineTextAlignment(.center)
+                            .lineLimit(nil)
+                            .opacity(1)
 
-                    
-                }.padding()
-                    .frame(width: width, height: 150)
-                    .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .foregroundColor(Color("background")
-                                        )
-                        .blendMode(.multiply)
-                        .opacity(0.5))
+                        
+                    }.padding()
+                
             })
+                .frame(maxWidth: .infinity, maxHeight: 200)
+//                .frame(minWidth: .zero, idealWidth: .infinity, maxWidth: .infinity, minHeight: .zero, idealHeight: 150, maxHeight: 150, alignment: .center)
+                .background(Color("background"))
+                            .cornerRadius(12)
+                            .padding([.trailing, .leading], 30)
                
             
         }

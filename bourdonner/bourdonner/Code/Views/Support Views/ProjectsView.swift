@@ -11,7 +11,7 @@ struct ProjectsView: View {
     
     //MARK:- variables
     var projects: [Projects]
-    var width: CGFloat
+
     @State var showProjects = true
 
     //MARK:- views
@@ -36,9 +36,9 @@ struct ProjectsView: View {
                 
             }
             if(showProjects) {
-                LazyVGrid(columns: [GridItem()], alignment: .center, spacing: 12) {
+                LazyVStack {
                     ForEach(projects) { project in
-                        ProjectView(project: project, width: width / 3 - 15)
+                        ProjectView(project: project)
 //                        SkillView(skill: skill, width: width / 3 - 15)
                     }
                 }.padding(.top, 15)
@@ -50,6 +50,6 @@ struct ProjectsView: View {
 
 struct ProjectsView_Previews: PreviewProvider {
     static var previews: some View {
-        ProjectsView(projects: AppModel().portfolio.projects, width: 1050)
+        ProjectsView(projects: AppModel().portfolio.projects)
     }
 }

@@ -14,7 +14,7 @@ struct SkillLink: View {
     var width: CGFloat = 120
     
     var body: some View {
-        NavigationLink(destination: Text("Em construção"), label: {
+        NavigationLink(destination: ProjectsView(projects: AppModel().portfolio.projects), label: {
             SkillView(skill: skill, width: width)
         })
     }
