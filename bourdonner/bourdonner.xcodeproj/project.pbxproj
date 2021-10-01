@@ -145,6 +145,7 @@
 			children = (
 				18AA353327039E8100B5FE9A /* Support Views */,
 				1892CAC42702031200AB7947 /* PortfolioView.swift */,
+				1891F3512707621B009D38E3 /* ProjectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,7 +205,6 @@
 				18AA354727054C6400B5FE9A /* ExperienceView.swift */,
 				18AA354927054FFD00B5FE9A /* ExperiencesView.swift */,
 				1891F34B27074CD7009D38E3 /* ProjectCellView.swift */,
-				1891F3512707621B009D38E3 /* ProjectsView.swift */,
 			);
 			path = "Support Views";
 			sourceTree = "<group>";

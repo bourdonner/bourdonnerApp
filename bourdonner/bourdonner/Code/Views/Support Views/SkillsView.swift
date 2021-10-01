@@ -40,7 +40,7 @@ struct SkillsView: View {
                         SkillLink(skill: skill, width: width / 3 - 15)
 //                        SkillView(skill: skill, width: width / 3 - 15)
                     }
-                }.padding(.top, 38)
+                }.padding(.top, 25)
             }
         }
     }

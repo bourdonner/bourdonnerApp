@@ -49,22 +49,26 @@ struct ProjectCellView: View {
             }, label: {
                     
                     VStack{
-                        Image(systemName: project.projectImage)
-                            .font(.system(size: 60, weight: .semibold))
-                            .opacity(1)
-                        Spacer()
+                        Image(project.projectImage)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(12)
+//                        Spacer()
                         
                         Text(project.projectName)
-                            .font(Omnes.regular.font(size: 12))
+                            .font(Omnes.bold.font(size: 16))
                             .multilineTextAlignment(.center)
                             .lineLimit(nil)
                             .opacity(1)
+                            .padding(.bottom, 15)
+                            .padding(.top, 10)
 
                         
-                    }.padding()
+                    }
+//                    .padding()
                 
             })
-                .frame(maxWidth: .infinity, maxHeight: 200)
+                .frame(maxWidth: .infinity, maxHeight: 250)
 
                 .background(Color("background"))
                             .cornerRadius(12)

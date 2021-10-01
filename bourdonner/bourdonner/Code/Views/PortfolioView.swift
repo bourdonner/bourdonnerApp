@@ -32,7 +32,7 @@ struct PortfolioView: View {
                     
                 }
                 
-            }.navigationBarTitle("")
+            }
              .navigationBarHidden(true)
         }
     }

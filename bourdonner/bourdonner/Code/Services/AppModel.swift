@@ -22,8 +22,8 @@ class AppModel: ObservableObject {
         Experience(id: UUID().uuidString, companyName: "Court of Justice of the State of Paraná", role: "Design Internship", duration: "2017-2020"),
         //Experience(id: UUID().uuidString, companyName: "Nome da empresa", role: "Cargo", duration: "Duração"),
     ], projects: [
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .userInterface, projectImage: "iphone", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type:.userInterface, projectImage: "iphone", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .motionGraphics, projectImage: "iphone", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .swift, projectImage: "iphone", link: "https://www.bourdonner.com.br")])
+        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .userInterface, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
+        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type:.userInterface, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
+        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .motionGraphics, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
+        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .swift, projectImage: "imageUI1", link: "https://www.bourdonner.com.br")])
 }
