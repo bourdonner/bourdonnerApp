@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1884894C27076B370072C81E /* Omnes-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1884894B27076B370072C81E /* Omnes-bold.ttf */; };
-		1891F34C27074CD7009D38E3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34B27074CD7009D38E3 /* ProjectView.swift */; };
+		1891F34C27074CD7009D38E3 /* ProjectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34B27074CD7009D38E3 /* ProjectCellView.swift */; };
 		1891F35027075CEA009D38E3 /* SkillLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34F27075CEA009D38E3 /* SkillLink.swift */; };
 		1891F3522707621B009D38E3 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F3512707621B009D38E3 /* ProjectsView.swift */; };
 		1892CAC32702031200AB7947 /* bourdonnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892CAC22702031200AB7947 /* bourdonnerApp.swift */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		1884894B27076B370072C81E /* Omnes-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-bold.ttf"; sourceTree = "<group>"; };
-		1891F34B27074CD7009D38E3 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		1891F34B27074CD7009D38E3 /* ProjectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellView.swift; sourceTree = "<group>"; };
 		1891F34F27075CEA009D38E3 /* SkillLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillLink.swift; sourceTree = "<group>"; };
 		1891F3512707621B009D38E3 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		1892CABF2702031200AB7947 /* bourdonner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bourdonner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				18AA353127039B8800B5FE9A /* AppModel.swift */,
+				1891F34F27075CEA009D38E3 /* SkillLink.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,9 +203,8 @@
 				18AA35452704ECEC00B5FE9A /* SkillsView.swift */,
 				18AA354727054C6400B5FE9A /* ExperienceView.swift */,
 				18AA354927054FFD00B5FE9A /* ExperiencesView.swift */,
-				1891F34B27074CD7009D38E3 /* ProjectView.swift */,
+				1891F34B27074CD7009D38E3 /* ProjectCellView.swift */,
 				1891F3512707621B009D38E3 /* ProjectsView.swift */,
-				1891F34F27075CEA009D38E3 /* SkillLink.swift */,
 			);
 			path = "Support Views";
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				1891F3522707621B009D38E3 /* ProjectsView.swift in Sources */,
 				18AA352A2703989700B5FE9A /* ColorExtensions.swift in Sources */,
 				18AA35462704ECEC00B5FE9A /* SkillsView.swift in Sources */,
-				1891F34C27074CD7009D38E3 /* ProjectView.swift in Sources */,
+				1891F34C27074CD7009D38E3 /* ProjectCellView.swift in Sources */,
 				1891F35027075CEA009D38E3 /* SkillLink.swift in Sources */,
 				1892CACF2702031400AB7947 /* bourdonner.xcdatamodeld in Sources */,
 				18AA354A27054FFD00B5FE9A /* ExperiencesView.swift in Sources */,

@@ -22,7 +22,7 @@ struct SkillView: View {
                 .opacity(1)
             
             Spacer()
-            Text(skill.skillName)
+            Text(skill.skillType.rawValue)
                 .font(Omnes.regular.font(size: 12))
                 .multilineTextAlignment(.center)
                 .lineLimit(nil)

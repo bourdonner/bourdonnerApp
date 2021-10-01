@@ -7,16 +7,44 @@
 
 import SwiftUI
 
-struct ProjectView: View {
+struct ProjectsListView: View {
+
+    @ObservedObject private var viewModel = AppModel()
     
-    var project: Projects
-//    var width: CGFloat  = 250
+    @State var showProjects = true
+    
+    @State var projectListFilter: ProjectType
+    
+
+    //MARK:- views
+
+    var body: some View {
+        VStack (alignment: .leading) {
+
+            if(showProjects) {
+                LazyVStack {
+                    ForEach(viewModel.portfolio.projects) { project in
+                        if project.type == projectListFilter{
+                            ProjectCellView(project: project)
+                        }
+
+
+                    }
+                }.padding(.top, 15)
+            }
+        }
+    }
+}
+
+
+
+struct ProjectCellView: View {
+    
+    @StateObject var project: Projects
            
         var body: some View {
             Button(action: {
                 UIApplication.shared.open(URL(string: project.link)!)
-//      onOpenURL(perform: url in
-//      print(project.link))
                 
             }, label: {
                     
@@ -37,7 +65,7 @@ struct ProjectView: View {
                 
             })
                 .frame(maxWidth: .infinity, maxHeight: 200)
-//                .frame(minWidth: .zero, idealWidth: .infinity, maxWidth: .infinity, minHeight: .zero, idealHeight: 150, maxHeight: 150, alignment: .center)
+
                 .background(Color("background"))
                             .cornerRadius(12)
                             .padding([.trailing, .leading], 30)
@@ -48,12 +76,18 @@ struct ProjectView: View {
 
 
 
-struct ProjectView_Previews: PreviewProvider {
-    static var previews: some View {
-        GeometryReader { proxy in
-            ProjectView(project: AppModel().portfolio.projects[0])
-                .padding(24)
-        }
+//struct ProjectView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GeometryReader { proxy in
+//            ProjectCellView(project: AppModel().portfolio.projects[0])
+//                .padding(24)
+//        }
+//
+//    }
+//}
 
-    }
-}
+//struct ProjectsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProjectsListView(projects: AppModel().portfolio.projects)
+//    }
+//}
