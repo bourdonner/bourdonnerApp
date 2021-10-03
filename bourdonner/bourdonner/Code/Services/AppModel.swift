@@ -22,8 +22,11 @@ class AppModel: ObservableObject {
         Experience(id: UUID().uuidString, companyName: "Court of Justice of the State of Paraná", role: "Design Internship", duration: "2017-2020"),
         //Experience(id: UUID().uuidString, companyName: "Nome da empresa", role: "Cargo", duration: "Duração"),
     ], projects: [
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .userInterface, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type:.userInterface, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .motionGraphics, projectImage: "imageUI1", link: "https://www.bourdonner.com.br"),
-        Projects(id: UUID().uuidString, projectName: "Nome do Projeto", type: .swift, projectImage: "imageUI1", link: "https://www.bourdonner.com.br")])
+        Projects(id: UUID().uuidString, projectName: "Royals", type: .userInterface, projectImage: "imageUI1", link: "https://vimeo.com/manage/videos/610081412"),
+        Projects(id: UUID().uuidString, projectName: "Don't Panic", type: .userInterface, projectImage: "imageUI1", link: "https://vimeo.com/manage/videos/582313315"),
+        Projects(id: UUID().uuidString, projectName: "TrenzaloreApp", type:.userInterface, projectImage: "imageUI1", link: "https://vimeo.com/manage/videos/582317881"),
+        Projects(id: UUID().uuidString, projectName: "Royals", type: .motionGraphics, projectImage: "imageUI1", link: "https://vimeo.com/manage/videos/610081412"),
+        Projects(id: UUID().uuidString, projectName: "bourdonnerApp", type: .swift, projectImage: "imageUI1", link: "https://github.com/bourdonner/bourdonnerApp"),
+        Projects(id: UUID().uuidString, projectName: "tecnológica", type: .swift, projectImage: "imageUI1", link: "https://github.com/bourdonner/tecnologica"),
+        Projects(id: UUID().uuidString, projectName: "Algures 13: Interestelar", type: .graphicDesign, projectImage: "imageUI1", link: "https://bourdonner.com.br/interestelar")])
 }
