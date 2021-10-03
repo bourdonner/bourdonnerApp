@@ -53,6 +53,7 @@ struct ProjectCellView: View {
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(12)
+
 //                        Spacer()
                         
                         Text(project.projectName)
