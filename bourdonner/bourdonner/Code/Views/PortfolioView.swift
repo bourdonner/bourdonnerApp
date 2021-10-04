@@ -13,7 +13,10 @@ struct PortfolioView: View {
     var appModel: AppModel = AppModel()
     //Mark:- views
     var body: some View {
+        
+        
         NavigationView {
+            
             ZStack {
                 Color("background")
                     .ignoresSafeArea()

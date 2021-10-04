@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18271CEB270AA0EF009C6184 /* Animation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18271CE8270AA0EF009C6184 /* Animation+.swift */; };
+		18271CEC270AA0EF009C6184 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18271CE9270AA0EF009C6184 /* TabsView.swift */; };
+		18271CED270AA0EF009C6184 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18271CEA270AA0EF009C6184 /* View+.swift */; };
+		18271CF0270AA148009C6184 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18271CEF270AA148009C6184 /* SplashScreen.swift */; };
 		1884894C27076B370072C81E /* Omnes-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1884894B27076B370072C81E /* Omnes-bold.ttf */; };
 		1891F34C27074CD7009D38E3 /* ProjectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34B27074CD7009D38E3 /* ProjectCellView.swift */; };
 		1891F35027075CEA009D38E3 /* SkillLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891F34F27075CEA009D38E3 /* SkillLink.swift */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18271CE8270AA0EF009C6184 /* Animation+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+.swift"; sourceTree = "<group>"; };
+		18271CE9270AA0EF009C6184 /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		18271CEA270AA0EF009C6184 /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		18271CEF270AA148009C6184 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		1884894B27076B370072C81E /* Omnes-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Omnes-bold.ttf"; sourceTree = "<group>"; };
 		1891F34B27074CD7009D38E3 /* ProjectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCellView.swift; sourceTree = "<group>"; };
 		1891F34F27075CEA009D38E3 /* SkillLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillLink.swift; sourceTree = "<group>"; };
@@ -41,7 +49,7 @@
 		1892CABF2702031200AB7947 /* bourdonner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bourdonner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1892CAC22702031200AB7947 /* bourdonnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bourdonnerApp.swift; sourceTree = "<group>"; };
 		1892CAC42702031200AB7947 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
-		1892CAC62702031400AB7947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1892CAC62702031400AB7947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = bourdonner/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		1892CAC92702031400AB7947 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1892CACB2702031400AB7947 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1892CACE2702031400AB7947 /* bourdonner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bourdonner.xcdatamodel; sourceTree = "<group>"; };
@@ -73,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18271CEE270AA0FA009C6184 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18271CE8270AA0EF009C6184 /* Animation+.swift */,
+				18271CE9270AA0EF009C6184 /* TabsView.swift */,
+				18271CEA270AA0EF009C6184 /* View+.swift */,
+				18271CEF270AA148009C6184 /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		1892CAB62702031200AB7947 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +162,7 @@
 		1892CADA27020B8600AB7947 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18271CEE270AA0FA009C6184 /* SplashScreen */,
 				18AA353327039E8100B5FE9A /* Support Views */,
 				1892CAC42702031200AB7947 /* PortfolioView.swift */,
 				1891F3512707621B009D38E3 /* ProjectsView.swift */,
@@ -285,12 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18271CF0270AA148009C6184 /* SplashScreen.swift in Sources */,
 				1892CACC2702031400AB7947 /* Persistence.swift in Sources */,
 				18AA353527039EA500B5FE9A /* HeaderView.swift in Sources */,
 				1891F3522707621B009D38E3 /* ProjectsView.swift in Sources */,
 				18AA352A2703989700B5FE9A /* ColorExtensions.swift in Sources */,
 				18AA35462704ECEC00B5FE9A /* SkillsView.swift in Sources */,
 				1891F34C27074CD7009D38E3 /* ProjectCellView.swift in Sources */,
+				18271CEC270AA0EF009C6184 /* TabsView.swift in Sources */,
+				18271CED270AA0EF009C6184 /* View+.swift in Sources */,
 				1891F35027075CEA009D38E3 /* SkillLink.swift in Sources */,
 				1892CACF2702031400AB7947 /* bourdonner.xcdatamodeld in Sources */,
 				18AA354A27054FFD00B5FE9A /* ExperiencesView.swift in Sources */,
@@ -301,6 +324,7 @@
 				1892CAC52702031200AB7947 /* PortfolioView.swift in Sources */,
 				18AA352D2703994400B5FE9A /* FontManager.swift in Sources */,
 				1892CAC32702031200AB7947 /* bourdonnerApp.swift in Sources */,
+				18271CEB270AA0EF009C6184 /* Animation+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bourdonner/Resources/Preview Content\"";
@@ -440,7 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"bourdonner/Resources/Preview Content\"";
@@ -471,7 +497,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
