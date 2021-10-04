@@ -11,5 +11,10 @@
 		<string>Omnes-light.ttf</string>
 		<string>Omnes-bold.ttf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>launchScreen</string>
+	</dict>
 </dict>
 </plist>

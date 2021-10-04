@@ -22,8 +22,11 @@ struct bourdonnerApp: App {
                             .resizable()
                             .frame(width: 120, height: 120, alignment: .center)
                                  } background: {
-                                     Rectangle()
-                                         .fill(LinearGradient(gradient: Gradient(colors: [Color("yellow"), .accentColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                     Image("launchScreen")
+                                         .resizable()
+                                         .scaledToFill()
+//                                     Rectangle()
+//                                         .fill(LinearGradient(gradient: Gradient(colors: [Color("yellow"), .accentColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
                                       //   .opacity(0)
                     }
                 }
