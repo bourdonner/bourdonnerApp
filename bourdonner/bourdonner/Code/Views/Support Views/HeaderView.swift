@@ -74,7 +74,7 @@ struct HeaderView: View {
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView(appModel: AppModel())
-            .padding(24)
+            .padding(20)
     }
 }
 

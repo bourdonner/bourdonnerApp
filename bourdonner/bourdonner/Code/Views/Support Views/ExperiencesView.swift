@@ -10,7 +10,7 @@ import SwiftUI
 struct ExperiencesView: View {
     
     var experiences: [Experience]
-    @State var showExperiences = true
+    @State var showExperiences = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {

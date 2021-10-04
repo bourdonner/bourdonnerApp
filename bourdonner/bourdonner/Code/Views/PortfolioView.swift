@@ -23,10 +23,10 @@ struct PortfolioView: View {
                         HeaderView(appModel: appModel)
                         
                         SkillsView(skills: appModel.portfolio.skills, width: UIScreen.main.bounds.width - 48)
-                            .padding(.top, 32)
+                            .padding(.top, 20)
                         
                         ExperiencesView(experiences: appModel.portfolio.experiences)
-                            .padding(.top, 32)
+                            .padding(.top, 20)
                     }.zIndex(1)
                         .padding(24)
                     

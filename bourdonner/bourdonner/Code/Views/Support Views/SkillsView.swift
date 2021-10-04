@@ -12,7 +12,7 @@ struct SkillsView: View {
     //MARK:- variables
     var skills: [Skill]
     var width: CGFloat
-    @State var showSkills = true
+    @State var showSkills = false
 
     //MARK:- views
 
