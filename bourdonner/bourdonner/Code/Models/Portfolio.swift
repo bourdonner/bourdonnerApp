@@ -42,6 +42,7 @@ enum ProjectType: String {
     case motionGraphics  = "Motion Graphics"
     case videoEditing  = "Video Editing"
     case graphicDesign = "Graphic Design"
+    case animated = "Animation"
     
 }
 

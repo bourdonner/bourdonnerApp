@@ -16,7 +16,7 @@ struct ExperiencesView: View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(spacing: 16) {
                 Text("Experiences")
-                    .font(Omnes.bold.font(size: 21))
+                    .font(Omnes.bold.font(size: 22))
                     .opacity(0.9)
                 Button {
                     withAnimation(.easeInOut(duration: 0.35)){
@@ -24,8 +24,8 @@ struct ExperiencesView: View {
                     }
                     
                 } label : {
-                    Image(systemName: "chevron.up")
-                        .font(.system(size: 18, weight: .medium))
+                    Image(systemName: "chevron.up.circle.fill")
+                        .font(.system(size: 22, weight: .medium))
                         .rotationEffect(self.showExperiences ? .zero : .degrees(180))
                 }.buttonStyle(PlainButtonStyle())
             }.padding(.bottom, 14)

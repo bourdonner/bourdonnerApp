@@ -23,7 +23,7 @@ struct ExperienceView: View {
                 VStack(alignment: .leading) {
                     Text(experience.role)
                         .font(Omnes.bold.font(size: 18.5))
-                        .foregroundColor(Color("yellow"))
+                        .foregroundColor(Color("backgroundInvert"))
                     
                     Text(experience.companyName)
                         .font(Omnes.regular.font(size: 16.5))

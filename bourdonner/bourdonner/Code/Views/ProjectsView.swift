@@ -11,19 +11,20 @@ struct ProjectsView : View{
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View{
-            
+
             VStack{
                     ScrollView {
                         ProjectsListView(projectListFilter: type)
                     }
-                Spacer()
+                
             }
-       
+
             .navigationBarTitle(type.rawValue, displayMode: .inline)
-            .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading: Button(action: {
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: Button(action: {
                 handleBackButton()}, label: {
-                Image(systemName: "chevron.left")}))
+                    Image(systemName: "chevron.left.circle.fill")}))
+
         }
 
     func handleBackButton(){

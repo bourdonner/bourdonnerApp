@@ -20,7 +20,7 @@ struct SkillsView: View {
         VStack (alignment: .leading) {
             HStack(spacing: 16) {
                 Text("Skills")
-                    .font(Omnes.bold.font(size: 21))
+                    .font(Omnes.bold.font(size: 22))
                     .opacity(0.9)
                 Button {
                     withAnimation(.easeInOut(duration: 0.35)){
@@ -28,8 +28,8 @@ struct SkillsView: View {
                     }
 
                 } label : {
-                    Image(systemName: "chevron.up")
-                        .font(.system(size: 18, weight: .medium))
+                    Image(systemName: "chevron.up.circle.fill")
+                        .font(.system(size: 22, weight: .medium))
                         .rotationEffect(self.showSkills ? .zero : .degrees(180))
                 }.buttonStyle(PlainButtonStyle())
                 
@@ -40,7 +40,7 @@ struct SkillsView: View {
                         SkillLink(skill: skill, width: width / 3 - 15)
 //                        SkillView(skill: skill, width: width / 3 - 15)
                     }
-                }.padding(.top, 25)
+                }.padding(.top, 14)
             }
         }
     }

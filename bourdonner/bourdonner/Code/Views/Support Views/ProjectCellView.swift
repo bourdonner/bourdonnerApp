@@ -8,76 +8,77 @@
 import SwiftUI
 
 struct ProjectsListView: View {
-
+    
     @ObservedObject private var viewModel = AppModel()
     
-    @State var showProjects = true
     
     @State var projectListFilter: ProjectType
     
-
+    
     //MARK:- views
-
+    
     var body: some View {
-        VStack (alignment: .leading) {
+        ZStack {
+//            Color("background")
+//                .ignoresSafeArea()
+                
+                    LazyVStack {
+                        ForEach(viewModel.portfolio.projects) { project in
+                            if project.type == projectListFilter{
+                                ProjectCellView(project: project)
+                            }
 
-            if(showProjects) {
-                LazyVStack {
-                    ForEach(viewModel.portfolio.projects) { project in
-                        if project.type == projectListFilter{
-                            ProjectCellView(project: project)
-                        }
-
-
-                    }
-                }.padding(.top, 15)
+                    }.padding(.top, 15)
+   
             }
-        }
+        }//.frame(maxWidth: .infinity)
+      //      .background(Color("background"))
+
     }
 }
+
 
 
 
 struct ProjectCellView: View {
     
     @StateObject var project: Projects
-           
-        var body: some View {
-            Button(action: {
-                UIApplication.shared.open(URL(string: project.link)!)
-                
-            }, label: {
-                    
-                    VStack{
-                        Image(project.projectImage)
-                            .resizable()
-                            .scaledToFit()
-                            .cornerRadius(12)
-
-//                        Spacer()
-                        
-                        Text(project.projectName)
-                            .font(Omnes.bold.font(size: 16))
-                            .multilineTextAlignment(.center)
-                            .lineLimit(nil)
-                            .opacity(1)
-                            .padding(.bottom, 15)
-                            .padding(.top, 10)
-
-                        
-                    }
-//                    .padding()
-                
-            })
-                .frame(maxWidth: .infinity, maxHeight: 250)
-
-                .background(Color("background"))
-                            .cornerRadius(12)
-                            .padding([.trailing, .leading], 30)
-               
+    
+    var body: some View {
+        Button(action: {
+            UIApplication.shared.open(URL(string: project.link)!)
             
-        }
+        }, label: {
+            
+            VStack{
+                Image(project.projectImage)
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(12)
+                
+                //                        Spacer()
+                
+                Text(project.projectName)
+                    .font(Omnes.regular.font(size: 20))
+                    .foregroundColor(Color("backgroundInvert"))
+                    .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .padding(.bottom, 20)
+                    .padding(.top, 10)
+                
+                
+            }
+
+        })
+            .frame(maxWidth: .infinity, maxHeight: 250)
+            .background(Color("almostPure"))
+            .cornerRadius(12)
+            .padding([.trailing, .leading], 30)
+            
+        
+        
     }
+}
 
 
 
